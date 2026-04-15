@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moodly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🌈 Moodly</h1>
+
+  <div class="container">
+    
+    <label>How do you feel today?</label>
+    <input type="range" min="0" max="100" value="50" id="moodSlider">
+
+    <div class="labels">
+      <span>Highly Motivated</span>
+      <span>Highly Unmotivated</span>
+    </div>
+
+    <textarea id="note" placeholder="Write your thoughts..."></textarea>
+
+    <div class="tags">
+      <button onclick="selectTag('lab')">Lab</button>
+      <button onclick="selectTag('social')">Social</button>
+      <button onclick="selectTag('rest')">Rest</button>
+      <button onclick="selectTag('creative')">Creative</button>
+    </div>
+
+    <button id="saveBtn">Save Entry</button>
+
+  </div>
+
+  <h2>📅 Timeline</h2>
+  <div id="timeline"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
